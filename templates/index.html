@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/bot.png') }}">
+</head>
+
+<body>
+    <h1 id="ai">AI Chatbot </h1>
+    <div class=""id="container">
+        <div class=""id="right">
+            <div class="chat-box" id="chat-box"></div>
+            <input type="text" id="message" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <div class=""id="left">
+            <img src="{{ url_for('static', filename='images/bot.png') }}" id="image" alt="Robot cartoon">
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/speech.js') }}"></script>
+</body>
+
+</html>
