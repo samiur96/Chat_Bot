@@ -4,7 +4,7 @@ from forefront import ForefrontClient
 app = Flask(__name__)
 
 # Initialize Forefront Client
-ff = ForefrontClient(api_key="sk-QDJCqxS91flkmnt7wyyKwRiBflDFJ9Ai")
+ff = ForefrontClient(api_key="your_token_from_forefront_api")
 
 messages = []  # Store conversation history
 
